@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html
+        xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/nav-style.css"/>
+    <link rel="stylesheet" href="./css/body-style.css"/>
+    <link rel="stylesheet" href="./css/footer.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online library</title>
+</head>
+<body>
+<div class="header">
+    <h1>Your online library</h1>
+    <hr/>
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/genre}" class="active">Genre</a>
+    <a th:href="@{/authors}">Author</a>
+    <a th:href="@{/add}">Add New Book</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<section id="banners">
+    <div class="banner">
+        <div>
+            <img src="./images/banners/Actual_banner1.png" class="banner-img" id="banner1">
+        </div>
+        <div>
+            <img src="./images/banners/Actual_banner2.png" class="banner-img" id="banner1">
+        </div>
+        <div>
+            <img src="./images/banners/Actual_banner3.png" class="banner-img" id="banner1">
+        </div>
+    </div>
+</section>
+<div class="aligth-center">
+    <th:block th:each="genre : ${genres}">
+        <div class="card text-white border-dark bg-dark mb-1" style="text-align: center">
+            <div class="card-header">
+                <h2 th:text="${genre.getName()}"></h2>
+            </div>
+<!--            <div class="card-body">-->
+<!--                <blockquote class="blockquote mb-0">-->
+<!--                    <p>Националност: <span th:text="${author.getNationality()}"></span></p>-->
+<!--                </blockquote>-->
+<!--            </div>-->
+        </div>
+    </th:block>
+    <br>
+</div>
+
+<footer class="footer-style aligth-center">
+    <p> About us </p>
+</footer>
+</body>
+</html>

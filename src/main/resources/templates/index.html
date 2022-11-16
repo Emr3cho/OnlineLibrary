@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html
+        xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/nav-style.css"/>
+    <link rel="stylesheet" href="./css/body-style.css"/>
+    <link rel="stylesheet" href="./css/footer.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online library</title>
+</head>
+<body>
+<div class="header">
+    <h1>Your online library</h1>
+    <hr/>
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a th:href="@{/}" class="active">Home</a>
+    <a th:href="@{/genre}">Genre</a>
+    <a th:href="@{/authors}">Author</a>
+    <a th:href="@{/add}">Add New Book</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<section id="banners">
+    <div class="banner">
+        <div>
+            <img src="./images/banners/Actual_banner1.png" class="banner-img" id="banner1">
+        </div>
+        <div>
+            <img src="./images/banners/Actual_banner2.png" class="banner-img" id="banner1">
+        </div>
+        <div>
+            <img src="./images/banners/Actual_banner3.png" class="banner-img" id="banner1">
+        </div>
+    </div>
+</section>
+<div class="aligth-center">
+
+    <th:block th:each="book : ${books}">
+        <div class="book-cont">
+            <div class="image-cont">
+                <img th:src="${book.getPictureUrl()}" class="image-size"/>
+            </div>
+            <h3 th:text="${book.getTitle()}"></h3>
+            <p th:text="${book.getDescription()}" class="text-positon"></p>
+            <div id="moreInfoSection">
+                <div>
+                    <p>Жанр: <span th:text="${book.getGenre().getName()}"></span></p>
+                    <p><b>Автори:</b>
+                        <th:block th:if="${book.getAuthor().size() > 0}">
+                            <br>
+                            <th:block th:each="author : ${book.getAuthor()}">
+                                <span th:text="${author.getFirstName() + ' ' + author.getLastName()}"></span>
+                                <br>
+                            </th:block>
+                        </th:block>
+                        <th:block th:unless="${book.getAuthor().size() > 0}">
+                            <span><b>Авторът е изтрит от системата!</b></span>
+                        </th:block>
+                    </p>
+                </div>
+                <a th:href="@{/delete/{id}(id = ${book.getId()})}">
+                    <button type="button" class="btn btn-danger">DELETE</button>
+                </a>
+            </div>
+
+        </div>
+    </th:block>
+    <br>
+
+    <footer class="footer-style aligth-center">
+        <p> About us </p>
+    </footer>
+</body>
+</html>

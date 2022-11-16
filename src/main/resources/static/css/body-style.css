@@ -1,0 +1,254 @@
+body{
+	background-image: url(https://media.gettyimages.com/videos/abstract-background-with-animation-of-moving-wave-soft-loopable-waves-video-id1144939219?s=640x640);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.header{
+	z-index: 10;
+}
+#moreInfoSection{
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 20px;
+}
+
+@media screen and (max-width: 2000px){
+	.aligth-center{
+		max-width: 70%;
+		margin: auto;
+	}
+
+	.image-cont{
+		width: 200px;
+		height: 270px;
+		max-width: 200px;
+		max-height: 270px;
+		float: left;
+		border-right: groove;
+		margin-top: 5px;
+	}
+
+	.image-size{
+		width: 180px;
+		height: 100%;
+		display:block;
+		padding-top: 2%;
+		padding-left: 2%;
+	}
+
+	.book-cont{
+		border-style: groove;
+		border-color: #f57c00;
+		height: 350px;
+		margin-top: 1%;
+		padding: 10px 0px 0px 0px;
+	}
+
+	.text-positon{
+		max-width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 1200px){
+	.aligth-center{
+		margin: auto;
+	}
+
+	.image-cont{
+		width:90%;
+		height: auto;
+		max-width: 90%;
+		max-height: auto;
+		float: center;
+		margin-top: 5px;
+		vertical-align: top;
+		display: inline-block;
+		border-right: none;
+		text-align: center;
+		padding: 8%;
+	}
+
+	.image-size{
+		width: 90%;
+		height: auto;
+		display:block;
+		padding-top: 2%;
+		padding-left: 2%;
+	}
+
+	.book-cont{
+		border-style: groove;
+		border-color: #f57c00;
+		height: auto;
+		max-width: 100%;
+		margin-top: 10%;
+	}
+
+	.text-positon{
+		max-width: 100%;
+		display: block;
+		padding: 2%;
+		font-size: 2rem;
+		margin-top:120%;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.aligth-center{
+		margin: auto;
+	}
+
+	.image-cont{
+		width:90%;
+		height: auto;
+		max-width: 90%;
+		max-height: auto;
+		float: center;
+		margin-top: 5px;
+		vertical-align: top;
+		display: inline-block;
+		border-right: none;
+		text-align: center;
+		padding: 8%;
+	}
+
+	.image-size{
+		width: 90%;
+		height: auto%;
+		display:block;
+		padding-top: 2%;
+		padding-left: 2%;
+	}
+
+	.book-cont{
+		border-style: groove;
+		border-color: #f57c00;
+		height: auto;
+		max-width: 100%;
+		margin-top: 10%;
+}
+
+	.text-positon{
+		max-width: 100%;
+		display: block;
+		padding: 2%;
+		margin-top:120%;
+	}
+	.banner{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.aligth-center{
+		margin: auto;
+	}
+
+	.image-cont{
+		width:90%;
+		height: auto;
+		max-width: 90%;
+		max-height: auto;
+		float: center;
+		margin-top: 5px;
+		vertical-align: top;
+		display: inline-block;
+		border-right: none;
+		text-align: center;
+		padding: 8%;
+	}
+
+	.image-size{
+		width: 90%;
+		height: auto%;
+		display:block;
+		padding-top: 2%;
+		padding-left: 2%;
+	}
+
+	.book-cont{
+		border-style: groove;
+		border-color: #f57c00;
+		height: auto;
+		max-width: 100%;
+		margin-top: 10%;
+}
+
+	.text-positon{
+		max-width: 100%;
+		display: block;
+		padding: 2%;
+		margin-top:120%;
+	}
+	.banner{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.aligth-center{
+		margin: auto;
+	}
+
+	.image-cont{
+		width:90%;
+		height: auto;
+		max-width: 90%;
+		max-height: auto;
+		float: center;
+		margin-top: 5px;
+		vertical-align: top;
+		display: inline-block;
+		border-right: none;
+		text-align: center;
+		padding: 8%;
+	}
+
+	.image-size{
+		width: 90%;
+		height: auto%;
+		display:block;
+		padding-top: 2%;
+		padding-left: 2%;
+	}
+
+	.book-cont{
+		border-style: groove;
+		border-color: #f57c00;
+		height: auto;
+		max-width: 100%;
+		margin-top: 10%;
+}
+
+	.text-positon{
+		max-width: 100%;
+		display: block;
+		padding: 2%;
+		margin-top:140%;
+	}
+	.banner{
+		display: none;
+	}
+}
+
+.banner{
+	width: 14%;
+	float: right;
+}
+.banner-img{
+	width:100%;
+	height: 100%;
+	padding-left: 2%;
+	margin-top: 5%;
+}
+
+.header{
+	position: sticky;
+	background-color: #f57c00;
+	top:0;
+}
+
+

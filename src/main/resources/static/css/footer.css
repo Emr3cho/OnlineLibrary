@@ -1,0 +1,8 @@
+.footer-style{
+	border-style: groove;
+	background-color: #333;
+	border-color: #333;
+	color: #f57c00;
+	font-size: 1rem;
+	border-radius: 1rem 0 1rem 0; 
+}

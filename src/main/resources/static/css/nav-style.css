@@ -1,0 +1,99 @@
+.topnav{
+	margin-left: 2px;
+	margin-right:2px;
+	padding: 0;
+	width: 14%;
+	height: 100%;
+	position: fixed;
+	background-color: #333;
+	overflow:hidden;
+	
+}
+
+.topnav a {
+  display: block;
+  color: #f57c00;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover{
+	background-color: #ffcc80;
+	color: black;
+}
+
+.topnav a.active{
+	background-color: #f57c00;
+	color: white;
+}
+
+.topnav .icon{
+	display:none;
+}
+
+/*1400*/
+@media screen and (max-width: 1400px){
+	.topnav{
+	margin-left: 2px;
+	margin-right:2px;
+	padding: 0;
+	width: 14%;
+	height: 100%;
+	position: fixed;
+	background-color: #333;
+	overflow:hidden;
+	
+}
+
+.topnav a {
+  display: block;
+  color: #f57c00;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover{
+	background-color: #ffcc80;
+	color: black;
+}
+
+.topnav a.active{
+	background-color: #f57c00;
+	color: white;
+}
+
+.topnav .icon{
+	display:none;
+}
+}
+
+form{
+	text-align: center;
+	padding: 0 0 0 363px;
+	margin: 0;
+}
+
+/*992px*/
+@media screen and (max-width: 992px){
+	.topnav{
+		margin:0;
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+	.topnav a{
+		float: left;
+	}
+}
+
+/*576px*/
+@media screen and (max-width: 576px){
+	.topnav a{
+		margin: 0;
+		float: none;
+	}
+}
